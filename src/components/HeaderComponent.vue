@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="bg-white card-header">
-                <div class="d-flex p-5 flex-wrap">
+                <div class="d-flex pt-4 ps-4 pe-4 flex-wrap">
                     <img src="../assets/style/images/book-widget.png" alt="">
                     <div>
                         <h3>Latest book Release</h3>

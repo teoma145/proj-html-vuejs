@@ -4,7 +4,8 @@
       <p>Damon Vaughn is a professor of psychology at the University of Toronto, a clinical psychologist 
         and the author of the multi-million copy bestseller “The story of my life.”
       </p>
-      <div class="d-flex">
+      <button class="mb-5 mt-2">Meet the autor</button>
+      <div class="d-flex flex-wrap justify-content-between mymarg">
         <div v-for="(itemsites, index) in sellingsites" :key="index">
           <img :src="itemsites" alt="item">
         </div>
@@ -37,6 +38,9 @@ p{
 }
 img{
   width: 240px;
-  margin-left: 60px;
+  
+}
+.mymarg{
+  margin-top: 130px;
 }
 </style>
