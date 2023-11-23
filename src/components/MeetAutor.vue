@@ -4,7 +4,7 @@
       <p>Damon Vaughn is a professor of psychology at the University of Toronto, a clinical psychologist 
         and the author of the multi-million copy bestseller “The story of my life.”
       </p>
-      <button class="mb-5 mt-2">Meet the autor</button>
+      <div class="mb-5 mt-2 borderbutton-2 text-white m-auto">Meet the autor</div>
       <div class="d-flex flex-wrap justify-content-between mymarg">
         <div v-for="(itemsites, index) in sellingsites" :key="index">
           <img :src="itemsites" alt="item">

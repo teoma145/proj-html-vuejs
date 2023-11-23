@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-5 mt-5">
+    <div class="mb-5 marginart">
         <div class="container-md mb-3">
         <div class="row d-flex">
             <div class="col-12 col-md-7 ">
@@ -13,9 +13,9 @@
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet.</p>
                 </div>
             </div>
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-md-5 mt-3 d-flex flex-column  align-items-center ">
                 <div class="text-end">
-                    <a href="" class="text-end">All Articles</a>
+                    <a href="" class="text-end text-decoration-none text-white borderbutton-3  mt-4">All Articles</a>
                 </div>
                 <div class=" wdimg">
                     <img src="../assets/style/images/thumb-13-2x-320x202.jpg" alt="">
@@ -58,8 +58,11 @@ img{
     padding: 90px;
 }
 .wdimg{
-    width: 320px;
-    margin-left: 50px;
+    width: 280px;
+    
     margin-top: 70px;
+}
+.marginart{
+    margin-top: 200px;
 }
 </style>

@@ -4,12 +4,13 @@
             <div>
             <img src="../assets/style/images/author-logo-round.png" alt="" class="logomy ">
             </div>
-            <div>
-                <ul class="d-flex text-white fs-2 flex-wrap">
-                    <li>Home</li>
-                    <li>Altro</li>
-                    <li>Altro</li>
-                </ul>
+            <div class="d-flex text-white fs-2 flex-wrap">
+                <div v-for="(headeritem, index) in Headeritems" :key="index" class="headeritem">
+                    <div class="orangehover"></div>
+                    <span v-if="index !== Headeritems.length - 1" class="Hoveritem">{{ headeritem }}</span>
+                    <span v-else v-html="headeritem" class="Hoveritem"></span>
+                </div>
+                
             </div>
         </div>
         <div class="myheadertitle d-flex ">
@@ -30,9 +31,9 @@
                         <p>Donec fringilla nunc eu turpis<br> dignissim, at euismod sapien<br> tincidunt. Maecenas eleifend congue cursus.</p>
                     </div>
                 </div>
-                <div class="d-flex justify-content-around  ps-5 pe-5 mb-4">
-                    <button>Buy on amazon</button>
-                    <button>Buy on App store</button>
+                <div class="d-flex justify-content-around  ps-5 pe-5 mb-4 text-center">
+                    <div class="borderbutton"><i class="fa-brands fa-amazon" style="color: #000000;"></i>Buy on Amazon</div>
+                    <div class="borderbutton"><i class="fa-brands fa-apple" style="color: #030303;"></i>Buy on App store</div>
                 </div>
                 
             </div>
@@ -45,12 +46,25 @@ export default {
     data () {
         
 
-        return {}
+        return {
+            Headeritems:[
+            'Home',
+            'About Me',
+            'Testimonials',
+            'My Blog',
+            'Meetups',
+            'Shop ',
+            'Contact Me',
+            '<i class="fa-solid fa-cart-shopping" style="color: #edeff2;"></i>'
+
+            ]
+        }
     }
 }
 </script>
 
 <style lang="scss" scoped>
+
 .header-bg{
     background-image: url(../assets/style/images/hero-07-2x.jpg);
     background-size: cover;
@@ -60,6 +74,7 @@ export default {
 }
 .logomy{
     width: 140px;
+    margin-left: 65px;
 }
 ul{
     margin-right: 20px;
@@ -92,5 +107,29 @@ h2{
     .card-header {
         position: static;
     }
+}
+.headeritem{
+    position: relative;
+    margin-right: 50px;
+    margin-top: 35px;
+    font-size: 0.55em;
+    &:hover {
+    .orangehover {
+      display: block;
+    }
+  }
+    
+   }
+.Hoveritem:hover{
+    color:#f4b429;
+    cursor: pointer;
+}
+.orangehover{
+    background-color: #f4b429;
+    height: 4px;
+    position: absolute;
+    top: -35px; 
+    width: 100%;
+    display: none;
 }
 </style>

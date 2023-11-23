@@ -9,7 +9,7 @@
                     <h2 class="text-white">New Audiobook</h2>
                     <h3>NO TIME TO READ? NO PROBLEM. LISTEN TO IT</h3>
                     <p>Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt. Maecenas eleifend congue cursus.</p>
-                    <button>Buy this on audible</button>
+                    <div class="borderbutton-2 m-auto text-white"><i class="fa-brands fa-audible me-2" style="color: #ffffff;"></i>Buy this on audible</div>
                 </div>
             </div>
         </div>

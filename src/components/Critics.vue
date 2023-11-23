@@ -1,5 +1,5 @@
 <template>
-    <div class="container-md mb-3">
+    <div class="container-md mb-3 mt-5">
         <div class="row d-flex">
             <div class="col-12 col-md-7 ">
                 <h2>What The Critics Say</h2>
@@ -19,8 +19,8 @@
                 
             </div>
             <div class="col-12 col-md-5">
-                <div class="text-end">
-                    <a href="" class="text-end">Read all testimonials</a>
+                <div class="text-end mt-3">
+                    <a href="" class="text-end text-decoration-none text-white borderbutton-3  mt-4">Read all testimonials</a>
                 </div>
                 <div class="mt-5 text-center p-5">
                     <h2>A True Masterpiece, Bravo!</h2>
