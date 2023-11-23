@@ -19,9 +19,17 @@
                 </div>
                 <div class=" wdimg">
                     <img src="../assets/style/images/thumb-13-2x-320x202.jpg" alt="">
+                    <div class="myposition">
+                        <h2>What's on your BookList</h2>
+                        <p>By admin|October 24th, 2019</p>
+                    </div>
                 </div>
                 <div class="wdimg pt-5">
                     <img src="../assets/style/images/thumb-08-2x-320x202.jpg" alt="">
+                    <div class="myposition">
+                        <h2>What's on your BookList</h2>
+                        <p>By admin|October 24th, 2019</p>
+                    </div>
                 </div>
                 <div>
 
@@ -58,11 +66,23 @@ img{
     padding: 90px;
 }
 .wdimg{
-    width: 280px;
-    
-    margin-top: 70px;
+  margin-top: 30px;
+  position: relative;
+  &:hover .myposition {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 }
 .marginart{
     margin-top: 200px;
+}
+.myposition{
+    position: absolute;
+    top:50%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    transition: opacity 0.3s ease;
 }
 </style>
