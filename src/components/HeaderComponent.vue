@@ -7,8 +7,22 @@
             <div class="d-flex text-white fs-2 flex-wrap">
                 <div v-for="(headeritem, index) in Headeritems" :key="index" class="headeritem">
                     <div class="orangehover"></div>
-                    <span v-if="index !== Headeritems.length - 1" class="Hoveritem">{{ headeritem }}</span>
-                    <span v-else v-html="headeritem" class="Hoveritem"></span>
+                    <div v-if="headeritem === 'Shop'">
+                    <div class="shop-title">Shop<i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i></div>
+                    
+                    <div class="additional-div">
+                        <div class="text-nowrap hover-color-additional d-flex align-items-center justify-content-center  ">
+                            <span>simple product</span>
+                        </div>
+                        <div class="text-nowrap hover-color-additional d-flex align-items-center justify-content-center">
+                            <span>variable product</span>
+                        </div>
+                    </div>
+                    </div>
+                    <span v-else-if="index !== Headeritems.length - 1" class="Hoveritem">{{ headeritem }}</span>
+                    <span v-else v-html="headeritem" class="Hoveritem">
+                    
+                    </span>
                 </div>
                 
             </div>
@@ -53,7 +67,7 @@ export default {
             'Testimonials',
             'My Blog',
             'Meetups',
-            'Shop ',
+            'Shop',
             'Contact Me',
             '<i class="fa-solid fa-cart-shopping" style="color: #edeff2;"></i>'
 
@@ -72,10 +86,30 @@ export default {
     background-position: top;
     height:900px
 }
+.additional-div{
+ display: none;
+ position: absolute;
+ top: 30px; 
+ left: 0;
+ background-color: black;
+ z-index: 1; 
+}
+.headeritem:hover .additional-div {
+    display: block;
+  }
 .logomy{
     width: 140px;
     margin-left: 65px;
 }
+.hover-color-additional{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+
+}
+.hover-color-additional:hover {
+        background-color: #49a987; 
+    }
 ul{
     margin-right: 20px;
     list-style-type: none;
