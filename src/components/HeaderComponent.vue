@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 .header-bg{
-    background-image: url(../assets/style/images/footer-3.jpg);
+    background-image: url(../assets/style/images/hero-07-2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;

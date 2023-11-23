@@ -17,6 +17,15 @@
   <div>
     <Subscribe/>
   </div>
+  <div>
+    <FindMore/>
+  </div>
+  <div>
+    <ArticlesComponent/>
+  </div>
+  <div>
+    <FooterComponent/>
+  </div>
 </template>
 
 <script>
@@ -26,6 +35,9 @@ import BuyAudible from './components/BuyAudible.vue';
 import Critics from './components/Critics.vue';
 import EventComponent from './components/EventComponent.vue';
 import Subscribe from './components/Subscribe.vue';
+import FindMore from './components/FindMore.vue';
+import ArticlesComponent from './components/ArticlesComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 export default {
   name:'App',
   components:{
@@ -35,6 +47,9 @@ export default {
    Critics,
    EventComponent,
    Subscribe,
+   FindMore,
+   ArticlesComponent,
+   FooterComponent,
   },
   data () {
     
