@@ -22,7 +22,7 @@
                 <div class="text-end mt-3">
                     <a href="" class="text-end text-decoration-none text-white borderbutton-3  mt-4">Read all testimonials</a>
                 </div>
-                <div class="mt-5 text-center p-5">
+                <div class="mt-5 text-center p-5 bgcritics">
                     <h2>A True Masterpiece, Bravo!</h2>
                     <p>
                         Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, 
@@ -30,7 +30,7 @@
                     </p>
                 </div>
                 <p class="mb-5 mt-5">Gerald Hendley,The Guardian</p>
-                <div class="mt-5 text-center p-5">
+                <div class="mt-5 text-center p-5 bgcritics">
                     <h2>A Unique View On The World</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ex magni placeat ducimus ut, dolore consequatur laboriosam ipsa corporis quia, esse vel sed. 

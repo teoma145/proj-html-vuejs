@@ -3,6 +3,9 @@
      <HeaderComponent/>
   </div>
   <div>
+    <FixedComponent/>
+  </div>
+  <div>
     <MeetAutor/>
   </div>
   <div>
@@ -38,6 +41,7 @@ import Subscribe from './components/Subscribe.vue';
 import FindMore from './components/FindMore.vue';
 import ArticlesComponent from './components/ArticlesComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
+import FixedComponent from './components/FixedComponent.vue';
 export default {
   name:'App',
   components:{
@@ -50,6 +54,7 @@ export default {
    FindMore,
    ArticlesComponent,
    FooterComponent,
+   FixedComponent,
   },
   data () {
     

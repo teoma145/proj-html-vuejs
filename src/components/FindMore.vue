@@ -61,4 +61,7 @@ hr{
     width: 20%;
     margin: 0 auto;
 }
+.findimg:hover {
+            transform: scale(1.03); 
+        }
 </style>
